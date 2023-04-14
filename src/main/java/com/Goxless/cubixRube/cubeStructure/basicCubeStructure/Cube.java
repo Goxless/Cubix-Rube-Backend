@@ -8,11 +8,13 @@ import java.util.List;
 
 public abstract class Cube implements ICube {
 
-    private List<ICubeSide> sides = new ArrayList<>();
+    protected List<CubeSide> sides = new ArrayList<>();
 
     @Override
     public String getStringStructure() {
         return null;
     }
 
+
+    public abstract boolean isConfiguredRight();
 }
