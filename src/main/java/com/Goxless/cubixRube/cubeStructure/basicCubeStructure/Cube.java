@@ -1,7 +1,6 @@
-package com.Goxless.cubixRube.cubeStructure.abstractClasses;
+package com.Goxless.cubixRube.cubeStructure.basicCubeStructure;
 
 import com.Goxless.cubixRube.cubeStructure.interfaces.ICube;
-import com.Goxless.cubixRube.cubeStructure.interfaces.ICubeSide;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,10 +1,8 @@
-package com.Goxless.cubixRube.cubeStructure.abstractClasses;
+package com.Goxless.cubixRube.cubeStructure.basicCubeStructure;
 
 import com.Goxless.cubixRube.cubeStructure.interfaces.ICubeSide;
-import com.Goxless.cubixRube.cubeStructure.interfaces.ISideLine;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;

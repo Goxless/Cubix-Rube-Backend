@@ -1,14 +1,16 @@
-package com.Goxless.cubixRube.cubeStructure.abstractClasses;
+package com.Goxless.cubixRube.cubeStructure.basicCubeStructure;
 
-import com.Goxless.cubixRube.cubeStructure.interfaces.ICubeSide;
 import com.Goxless.cubixRube.cubeStructure.interfaces.ISideLine;
-import com.Goxless.cubixRube.cubeStructure.interfaces.ISidePoint;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@RequiredArgsConstructor
+@Data
+@AllArgsConstructor
 public class SideLine implements ISideLine {
 
     private List<SidePoint> points = new ArrayList<>();
