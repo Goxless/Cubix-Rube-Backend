@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class cubeSixSideController {
 
-
     private final CubeService service;
 
     @GetMapping("/test")
