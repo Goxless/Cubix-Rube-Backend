@@ -2,11 +2,10 @@ package com.Goxless.cubixRube.services;
 
 
 import com.Goxless.cubixRube.cubeStructure.DTO.CubeDTO;
-import com.Goxless.cubixRube.cubeStructure.interfaces.ICube;
 import com.Goxless.cubixRube.cubeStructure.specificCubes.SixSideCube;
 import com.Goxless.cubixRube.repositories.CubeRepository;
-import com.Goxless.solvers.SixSideCubeSolver;
-import com.Goxless.solvers.SolutionStrategyContext;
+import com.Goxless.cubixRube.solvers.SixSideCubeSolver;
+import com.Goxless.cubixRube.solvers.SolutionStrategyContext;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.http.ResponseEntity;

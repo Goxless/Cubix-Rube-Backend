@@ -1,4 +1,4 @@
-package com.Goxless.solvers;
+package com.Goxless.cubixRube.solvers;
 
 import com.Goxless.cubixRube.cubeStructure.interfaces.ICube;
 
