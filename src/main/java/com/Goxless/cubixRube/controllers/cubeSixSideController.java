@@ -2,9 +2,7 @@ package com.Goxless.cubixRube.controllers;
 
 
 import com.Goxless.cubixRube.cubeStructure.DTO.CubeDTO;
-import com.Goxless.cubixRube.cubeStructure.specificCubes.SixSideCube;
 import com.Goxless.cubixRube.services.CubeService;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,10 +11,11 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequestMapping("/sixside")
-@RequiredArgsConstructor
 public class cubeSixSideController {
 
-    private final CubeService service;
+    // добавить валидацюи через @Validated
+    @Autowired
+    private CubeService service;
 
     @GetMapping("/test")
     public String getTest(){
@@ -26,7 +25,7 @@ public class cubeSixSideController {
     @PostMapping
     public ResponseEntity postCubeToSolve(@RequestBody CubeDTO DTOcube){
         try{
-            return service.postCubeToSolve(DTOcube);
+           return service.postCubeToSolve(DTOcube);
         }
         catch(Exception e){
             log.info(e.getMessage());

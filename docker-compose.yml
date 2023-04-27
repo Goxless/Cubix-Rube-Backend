@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  postgresDB:
+    image: "postgres:latest"
+    container_name: "CubixRube-postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      - "POSTGRES_USER=rootuser"
+      - "POSTGRES_PASSWORD=somekindofpass"
+      - "POSTGRES_DB=cubixrubedb"

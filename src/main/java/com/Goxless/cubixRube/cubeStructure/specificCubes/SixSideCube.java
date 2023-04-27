@@ -5,14 +5,18 @@ import com.Goxless.cubixRube.cubeStructure.basicCubeStructure.Cube;
 import com.Goxless.cubixRube.cubeStructure.basicCubeStructure.CubeSide;
 import com.Goxless.cubixRube.cubeStructure.basicCubeStructure.SideLine;
 import com.Goxless.cubixRube.cubeStructure.basicCubeStructure.SidePoint;
-import com.Goxless.cubixRube.cubeStructure.interfaces.ICube;
-import com.Goxless.cubixRube.exceptions.CubeProcessingException;
+
+import jakarta.persistence.Entity;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
